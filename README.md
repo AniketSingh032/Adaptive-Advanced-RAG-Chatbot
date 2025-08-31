@@ -76,10 +76,10 @@ poetry install --no-root
 ```
 * Create a .env file in the root directory and add the environment variables:
 ```
-GROQ_MODEL=
+GROQ_MODEL=openai/gpt-oss-20b
 GROQ_API_KEY=
-EMBEDDINGs_MODEL = 
-PERSIST_DIRECTORY = 
+EMBEDDINGs_MODEL = sentence-transformers/all-MiniLM-L6-v2
+PERSIST_DIRECTORY = embeddings_db
 LANGSMITH_API_KEY=your_langsmith_api_key
 LANGSMITH_TRACING=your_langsmith_tracing
 LANGSMITH_ENDPOINT=your_langsmith_endpoint
