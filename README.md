@@ -115,3 +115,32 @@ LANGSMITH_PROJECT=your_langsmith_project
 ```
 langgraph dev
 ```
+
+## Limitations
+
+⚠️ **Important Notice: This repository is for educational and tutorial purposes only.**
+
+### Known Limitations
+
+1. **Query Routing Accuracy:** There are instances where the system may incorrectly route queries between general knowledge and document retrieval paths. The LLM-based routing, while sophisticated, is not 100% accurate and may misclassify edge cases or ambiguous queries.
+
+2. **Educational Purpose Only:** This repository is designed for **learning and tutorial purposes** and should **not be used directly in production environments** without significant modifications and enhancements.
+
+3. **Code Optimization Opportunities:** There are numerous areas where the code quality, performance, and accuracy can be significantly improved, including:
+   - Error handling and edge case management
+   - Prompt engineering and optimization
+
+4. **Production Readiness:** The current implementation lacks several production-level requirements such as:
+   - Comprehensive testing suite
+   - Scalability optimizations
+   - Security hardening
+   - Performance monitoring
+   - Error recovery mechanisms
+   - API rate limiting and throttling
+
+### Future Improvements 😉
+
+**Improvements and production-level code coming in future updates!** We're actively working on:
+- Enhanced query routing accuracy
+- Performance optimizations
+- Production-ready deployment configurations
