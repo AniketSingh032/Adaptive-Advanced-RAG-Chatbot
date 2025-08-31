@@ -1,0 +1,30 @@
+[project]
+name = "agentic-rag-langchain-vs-dspy"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "AniketSingh032",email = "aniketworkofficial@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "langchain-community (>=0.3.29,<0.4.0)",
+    "langchain-chroma (>=0.2.5,<0.3.0)",
+    "langchain (>=0.3.27,<0.4.0)",
+    "langchain-huggingface (>=0.3.1,<0.4.0)",
+    "sentence-transformers (>=5.1.0,<6.0.0)",
+    "unstructured[md] (>=0.18.14,<0.19.0)",
+    "libmagic (>=1.0,<2.0)",
+    "hf-xet (>=1.1.9,<2.0.0)",
+    "dspy (>=3.0.2,<4.0.0)",
+    "flashrank (>=0.2.10,<0.3.0)",
+    "langchain-groq (>=0.3.7,<0.4.0)",
+    "langgraph (>=0.6.6,<0.7.0)",
+    "langchain-tavily (>=0.2.11,<0.3.0)",
+    "langgraph-cli[inmem] (>=0.4.0,<0.5.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

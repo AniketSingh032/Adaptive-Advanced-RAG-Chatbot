@@ -1,0 +1,7 @@
+{
+    "dependencies": ["."],
+    "graphs": {
+      "adaptive-rag": "./src/utils/workflow.py:graph"
+    },
+    "env": ".env"
+}
