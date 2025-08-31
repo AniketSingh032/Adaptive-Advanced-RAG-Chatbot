@@ -16,3 +16,6 @@ __pycache__/
 # LangGraph
 .langgraph_api
 
+# Test Notebooks
+rag_test.ipynb
+
