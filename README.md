@@ -12,66 +12,43 @@ The system intelligently routes queries between general knowledge responses and 
   <img src="assets/Adaptive+Advanced-Architecture.png.png"/>
 </p>
 
-The system uses a multi-node workflow architecture powered by LangGraph with the following key components:
+The system uses a **multi-node workflow architecture** powered by LangGraph with the following key components:
 
-Router Node: Intelligent LLM-based query classification that determines whether queries require document retrieval or can be answered with general knowledge
+* **Router Node:** Intelligent LLM-based query classification that determines whether queries require document retrieval or can be answered with general knowledge
+* **General Answer Node:** Handles conceptual and general knowledge queries using direct LLM responses
+* **Document Retrieval Node:** Implements advanced document processing with multi-query retrieval, compression, and reranking
+* **Answer Generation Node:** Generates contextual responses using retrieved documents with proper citation and formatting
 
-General Answer Node: Handles conceptual and general knowledge queries using direct LLM responses
-
-Document Retrieval Node: Implements advanced document processing with multi-query retrieval, compression, and reranking
-
-Answer Generation Node: Generates contextual responses using retrieved documents with proper citation and formatting
-
-### Workflow Process:
-
-User query enters the router node
-
-LLM performs intelligent classification (general vs retrieval-based)
-
-Query routes to appropriate processing path
-
-Advanced document processing (if retrieval path selected)
-
-Generate contextual response with proper formatting
-
-Maintain conversation memory across interactions
+**Workflow Process:**
+1. User query enters the router node
+2. LLM performs intelligent classification (general vs retrieval-based)  
+3. Query routes to appropriate processing path
+4. Advanced document processing (if retrieval path selected)
+5. Generate contextual response with proper formatting
+6. Maintain conversation memory across interactions
 
 ### Key Features
-### Advanced RAG Components
 
-Multi-Query Retriever: Generates multiple query variations for comprehensive document retrieval
+#### Advanced RAG Components
+- **Multi-Query Retriever:** Generates multiple query variations for comprehensive document retrieval
+- **FlashrankRerank:** State-of-the-art document reranking for relevance optimization  
+- **Contextual Compression:** Intelligent document compression while preserving key information
+- **Redundancy Filtering:** Removes duplicate or highly similar documents using embeddings similarity
+- **Document Pipeline:** Chains multiple compression and filtering techniques
 
-FlashrankRerank: State-of-the-art document reranking for relevance optimization
+#### Adaptive Capabilities  
+- **Intelligent Query Routing:** LLM-based classification with structured output
+- **Dynamic Workflow Selection:** Automatic routing between retrieval and knowledge-based responses
+- **Context-Aware Processing:** Maintains conversation history and adapts responses accordingly
+- **Memory Management:** Persistent conversation state with thread-based memory
 
-Contextual Compression: Intelligent document compression while preserving key information
-
-Redundancy Filtering: Removes duplicate or highly similar documents using embeddings similarity
-
-Document Pipeline: Chains multiple compression and filtering techniques
-
-### Adaptive Capabilities
-
-Intelligent Query Routing: LLM-based classification with structured output
-
-Dynamic Workflow Selection: Automatic routing between retrieval and knowledge-based responses
-
-Context-Aware Processing: Maintains conversation history and adapts responses accordingly
-
-Memory Management: Persistent conversation state with thread-based memory
-
-### Technical Stack
-
-LangGraph: Workflow orchestration and state management
-
-LangChain: RAG components and retrieval systems
-
-Groq: High-performance LLM provider (ChatGroq)
-
-HuggingFace: Embeddings model for semantic search
-
-Chroma: Vector database for document storage and similarity search
-
-Python 3.11+: Core programming language
+#### Technical Stack
+- **LangGraph:** Workflow orchestration and state management
+- **LangChain:** RAG components and retrieval systems
+- **Groq:** High-performance LLM provider (ChatGroq)
+- **HuggingFace:** Embeddings model for semantic search
+- **Chroma:** Vector database for document storage and similarity search
+- **Python 3.11+:** Core programming language
 
 ## Getting Started
 
