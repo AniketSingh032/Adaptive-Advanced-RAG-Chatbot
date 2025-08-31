@@ -60,7 +60,7 @@ The system uses a **multi-node workflow architecture** powered by LangGraph with
 
 * Clone the repository:
 ```
-git clone https://github.com/Mittali-b/Mohawk-AgenticAI-Backend.git
+git clone https://github.com/AniketSingh032/Adaptive-Advanced-RAG-Chatbot.git
 ```
 * Navigate to the root directory and create virtual environment, activate it and install Poetry:
 ```
